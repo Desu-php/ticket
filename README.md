@@ -1,17 +1,5 @@
 ## Установка
 
-#### 1. Добавьте в секцию repositories файла composer.json следующий код
-
-```
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "git@maxgit.net:maxdev/hde-tickets.git"
-    },
-    ...
-],
-```
-
 #### 2. Убедитесь, что вы не находитесь внутри docker контейнера, или у вас установлен корректный id_rsa в данном контейнере и выполните команду
 
     composer require maxdev/hde-tickets
