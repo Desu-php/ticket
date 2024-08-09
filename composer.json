@@ -1,0 +1,33 @@
+{
+  "name": "maxdev/hde-tickets",
+  "description": "Tickets service",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Ikromov Bakhtiyor",
+      "email": "ibn@maxil.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "ext-fileinfo": "*",
+    "laravel/framework": "^9.0 || ^10.0",
+    "spatie/image-optimizer": "^1.7",
+    "spatie/laravel-data": "^3.11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Maxdev\\Tickets\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Maxdev\\Tickets\\Providers\\TicketServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
